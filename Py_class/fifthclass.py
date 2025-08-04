@@ -16,3 +16,4 @@ for name, location, gender in names_of_student:
     user_input = input("enter location >> ")
     if user_input == location:
         score += 25
+        
