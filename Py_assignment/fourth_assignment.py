@@ -1,6 +1,6 @@
 import random
 
-print("\nSTUDENT REGISTER")
+print("\nSTUDENT REGISTER ")
 student_details = []   
 questions = ["12 * 12 >> ","90 // 10 >> ","A cat has 2 ears >> ","A car has how many wheels >> ",
             "The sky is blue. >> ","Fish can fly. >> ","2 + 2 equals 4.","Water boils at 100 degrees Celsius.",
