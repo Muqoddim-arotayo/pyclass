@@ -16,7 +16,7 @@ db_password = os.getenv("DB_PASS")
 
 my_con = pyms.connect(host='127.0.0.1', user='root', passwd=db_password, db="MyDatabase")
 print("connection succesful")
-
+   
 myCursor = my_con.cursor()
 print("done")
 
