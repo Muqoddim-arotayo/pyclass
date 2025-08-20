@@ -5,7 +5,7 @@ print("Patient class")
 
 class Patient :
     global patient_count
-    patient_count = 0
+    patient_count = 0 
     class Basis_Information :
         def __init__(self, first_name = None, last_name = None, phone_number = None, email = None, pass_word = None, age = None, gender = None):
             self.first_name = first_name
