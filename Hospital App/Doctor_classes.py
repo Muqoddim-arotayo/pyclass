@@ -26,7 +26,7 @@ class Doctor :
             self.patients_assigned = patients_assigned
 
     def __init__(doctor):
-        doctor.basic_information = Doctor.Basis_Information()
+        doctor.basic_information = Doctor.Basis_Information() 
         doctor.professional_Details = Doctor.Professional_Details()
         doctor.hospital_Role = Doctor.Hospital_Role()
         doctor.count = f"DOO{doctor_count+1}"
@@ -48,7 +48,7 @@ class Doctor :
     
 
 doc = Doctor(
-    
+
 )
         
 
