@@ -1,0 +1,5 @@
+Hospital = {
+    "doctors":{},
+    "patients":{},
+    "admins":{}
+}
