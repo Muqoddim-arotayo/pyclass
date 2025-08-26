@@ -21,13 +21,17 @@ print("Error handling")
 
 # Type error
 
-# x = 5
-# y = "6"
+x = 5
+y = "6"
 # z = x + y
 # print(z)
+try :
+    z = x + y
+except TypeError:
+    print("Cant add an int to a string")
 
 # catching the error
-x = 5
+# x = 5
 # y = "6"
 # try:
 #     z = x + y
@@ -37,14 +41,14 @@ x = 5
 
 # IndexError
 
-# num = [1, 2, 3]
-# try: 
-#     print ("Second element = %d" %(num[1]))   #%d is a placeholder to collect  the index (as decimal) coming from num and %(a[1]) is called formatting
+num = [1, 2, 3]
+try: 
+    print ("Second element = %d" %(num[1]))   #%d is a placeholder to collect  the index (as decimal) coming from num and %(a[1]) is called formatting
 
-#     print ("Fourth element = %d" %(num[2]))
+    print ("Fourth element = %d" %(num[3]))
 
-# except IndexError:
-#     print ("index out of range")
+except IndexError:
+    print ("index out of range")
 
 
 
