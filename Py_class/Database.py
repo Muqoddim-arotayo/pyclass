@@ -6,7 +6,7 @@
 
 # DBMS - Data Base Management System
 # software you can use to create your own database
-
+from tabulate import tabulate
 import pymysql as pyms
 import os   
 from dotenv import load_dotenv
@@ -33,8 +33,23 @@ print("done")
 
 # myCursor.execute("SHOW COLUMNS FROM Registration_Table")
 # for col in myCursor:
-#     print(col[0])
+#     print(col)
 # myCursor.close()
+
+# myCursor.execute("SELECT * FROM Registration_Table")
+# for row in myCursor:
+#     print(row)
+# myCursor.close()
+
+table = []
+header = ["Title", "Description", "Status", "Priority"]
+myCursor.execute("SELECT * FROM Registration_Table")
+for row in myCursor:
+    table.append(row)
+    print(row)
+myCursor.close()
+print(tabulate(table, headers=header, showindex="always", tablefmt="fancy_grid"))
+
 
 # my_query = "ALTER TABLE Registration_Table MODIFY full_name VARCHAR(25) AFTER password"
 # my_query = "ALTER TABLE Registration_Table CHANGE std_id student_id INT(5) PRIMARY KEY AUTO_INCREMENT"
@@ -74,10 +89,10 @@ print("done")
 #     print(each)
 # print(myCursor)
 
-full_name = input("Enter your full name : ")
-password = input("Enter your password : ")
-my_query = "SELECT full_name, password FROM Registration_Table WHERE full_name=%s AND password=%s"
-val = (full_name,password)
-reg = myCursor.execute(my_query, val)
-for each in myCursor:
-    print(each)
+# full_name = input("Enter your full name : ")
+# password = input("Enter your password : ")
+# my_query = "SELECT full_name, password FROM Registration_Table WHERE full_name=%s AND password=%s"
+# val = (full_name,password)
+# reg = myCursor.execute(my_query, val)
+# for each in myCursor:
+#     print(each)
