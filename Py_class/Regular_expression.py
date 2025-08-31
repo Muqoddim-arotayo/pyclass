@@ -97,7 +97,7 @@ import re
 # tx = re.sub(r'\d', '0000', comment)
 # print(tx)
 # tx = re.sub(r'[0-9][0-9][0-9]', '1980', comment)
-# print(tx)
+# print(tx)      
 # tx = re.sub(r'capacity', 'ability', comment)
 # print(tx)
 # tx = re.sub(r'[123]', '[1]', comment, 4)
