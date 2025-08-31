@@ -29,7 +29,7 @@ class Doctor :
         doctor.basic_information = Doctor.Basis_Information() 
         doctor.professional_Details = Doctor.Professional_Details()
         doctor.hospital_Role = Doctor.Hospital_Role()
-        doctor.count = f"DOO{doctor_count+1}"
+        doctor.count = f"DOO{doctor_count+1}"  
 
     def add_doctor_to_db (doctor):
         database.Hospital["doctors"][f"Doctor_{doctor.count}"] = {

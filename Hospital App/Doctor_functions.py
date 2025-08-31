@@ -5,6 +5,6 @@ def doc_user_sign_up():
     last_name = input("Enter your last name : ")
     email_address = input("Enter your Email Address : ")
     phone_number = input("Enter your phone number : ")
-    Password = input("Enter your Password : ")
+    Password = input("Enter your Password : ")   
     confirm_password = input("Confirm Password : ")
     
